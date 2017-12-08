@@ -9,3 +9,5 @@ RUN apt-get update && \
 
 RUN npm install --unsafe-perm -g canvas && \
     apt-get clean
+
+WORKDIR /
