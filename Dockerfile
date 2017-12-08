@@ -7,5 +7,5 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends apt-utils && \
     apt-get install -y wget curl vim libcairo2-dev libjpeg-dev libpango1.0-dev libgif-dev build-essential g++ 
 
-RUN npm install -g canvas && \
+RUN npm install --unsafe-perm -g canvas && \
     apt-get clean
